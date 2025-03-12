@@ -9,8 +9,8 @@ import numpy as np
 
 
 
-face_classifier = cv2.CascadeClassifier(r'C:\Users\anton\Documents\Skolan\EmotionDetectionCNN\haarcascade_frontalface_default.xml')
-classifier = load_model(r'C:\Users\anton\Documents\Skolan\EmotionDetectionCNN\best_model_after_training_07912.keras')
+face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+classifier = load_model('EmotionDetectionCNN\best_model_after_training_07912.keras')
 
 emotions_classifiers = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Suprise']
 
